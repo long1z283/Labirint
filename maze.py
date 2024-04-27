@@ -47,10 +47,10 @@ while game:
         player.rect.y -= -9 
         lose_text = font_lose.render("YOU LOSE!", True, (255, 0, 0))    
         main_win.blit(lose_text, (main_width // 2 - 80, main_height // 2))  
-        mixer.Sound("kick.ogg").play() 
+        mixer.Sound("money.ogg").play() 
         game = False
      
-    main_win.blit(background, (0, 0))     
+    main_win.blit("background.png", (0, 0))     
     player.reset() 
     cyborg.reset() 
     final.reset()  
